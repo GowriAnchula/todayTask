@@ -1,0 +1,94 @@
+.stepper-wrapper-horizontal{
+    display: flex;
+    justify-content: space-between;
+    .step-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 23%;
+        position: relative;
+    }
+    .step-number{
+        border-radius: 80%;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .divider-line{
+        height: 1px;
+        background-color: #bdbdbd;
+        position: absolute;
+        top: 75%;
+        left: 68%;
+    }
+    .divider-line-2{
+        width: 400%;
+    }
+    .divider-line-3{
+        width: 140%;
+    }
+    .divider-line-4{
+        width: 80%;
+    }
+    .divider-line-5{
+        width: 60%;
+    }
+}
+.stepper-wrapper-vertical{
+    .step-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 1.2rem;
+    }
+    .step-number{
+        border-radius: 80%;
+        width: 18px;
+        height: 18px;
+        padding: 4px;
+        text-align: center;
+        margin-right: 1.2rem;
+
+    }
+    .divider-line{
+        height: 17px;
+        width: 1px;
+        background-color: #bdbdbd;
+        position: absolute;
+        top: 100%;
+        left: 14px;
+    }
+}
+.step-number-active{
+    background-color: darkgreen;
+    color: #fff;
+}
+.step-number-disabled{
+    background-color:darkgrey;
+    color: #fff;
+}
+.step-description-active{
+    font-weight: bold ;
+}
+.step-number-mobileview{
+    border-radius: 80%;
+    background-color: darkgreen;
+    color: #fff;
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        text-align: center;
+        margin-right: 1.2rem;
+        float: left;
+}
+.step-currentstate{
+    margin-top: 10px;
+}
+.step-Next{
+    color: lightgrey;
+    position: absolute;
+    left:7%;
+}
